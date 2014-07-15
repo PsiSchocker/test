@@ -290,6 +290,7 @@ public class NewApplication extends javax.swing.JFrame {
             
         } catch (Exception ex) {
             
+            
             System.err.println("Something need fixing");
             solutionTF.setText("ERROR");
         }
