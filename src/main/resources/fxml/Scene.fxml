@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="215.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="learn.notentest.FXMLController">
+    <children>
+    
+        <TextField fx:id="tfsch" layoutX="78.0" layoutY="46.0" prefHeight="25.0" prefWidth="113.0" promptText="0,0,0" />
+        <TextField fx:id="tfmue" layoutX="78.0" layoutY="89.0" prefHeight="25.0" prefWidth="113.0" promptText="0,0,0" />
+        <TextField fx:id="tfso" layoutX="78.0" layoutY="125.0" prefHeight="25.0" prefWidth="113.0" promptText="0,0,0" />
+        <Label layoutX="14.0" layoutY="50.0" text="Schriftlich" />
+        <Label layoutX="15.0" layoutY="93.0" text="Mündlich" />
+        <Label layoutX="14.0" layoutY="129.0" text="Sonstiges" />
+        <Label layoutX="199.0" layoutY="14.0" text="Gewichtung" />
+        <TextField fx:id="gesch" layoutX="210.0" layoutY="46.0" prefHeight="25.0" prefWidth="39.0" text="2" />
+        <TextField fx:id="gemue" layoutX="211.0" layoutY="89.0" prefHeight="25.0" prefWidth="39.0" text="1" />
+        <TextField fx:id="geso" layoutX="211.0" layoutY="125.0" prefHeight="25.0" prefWidth="39.0" text="1" />
+        <Label layoutX="288.0" layoutY="14.0" text="Schnitt" />
+        <TextField fx:id="schnitt1" editable="false" layoutX="272.0" layoutY="46.0" prefHeight="25.0" prefWidth="69.0" />
+        <TextField fx:id="schnitt2" editable="false" layoutX="272.0" layoutY="89.0" prefHeight="25.0" prefWidth="69.0" />
+        <TextField fx:id="schnitt3" editable="false" layoutX="274.0" layoutY="125.0" prefHeight="25.0" prefWidth="69.0" />
+        <Button id="bt" layoutX="100.0" layoutY="168.0" mnemonicParsing="false" onAction="#bte" text="Compute" />
+      <TextField fx:id="schnitt4" editable="false" layoutX="274.0" layoutY="168.0" prefHeight="25.0" prefWidth="69.0" />
+    </children>
+</AnchorPane>
