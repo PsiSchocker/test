@@ -144,13 +144,21 @@ public class FXMLController implements Initializable {
             schnittSo = 1;
         }
 
-        schnittGes = (schnittSch * schriftlichGewichtung
-                + schnittMue * mündlichGewichtung
-                + schnittSo * sonstigesGewichtung)
-                / (schriftlichGewichtung
-                + mündlichGewichtung
-                + sonstigesGewichtung);
+        if (!(schriftlich.size() == 0)) {
+            schnittGes = (schnittSch * schriftlichGewichtung
+                    + schnittMue * mündlichGewichtung
+                    + schnittSo * sonstigesGewichtung)
+                    / (schriftlichGewichtung
+                    + mündlichGewichtung
+                    + sonstigesGewichtung);
+        } else {
 
+            schnittGes = (schnittSch * schriftlichGewichtung
+                    + schnittMue * mündlichGewichtung)
+                    / (schriftlichGewichtung
+                    + mündlichGewichtung);
+
+        }
         schnittArr[0] = schnittSch;
         schnittArr[1] = schnittMue;
         schnittArr[2] = schnittSo;
