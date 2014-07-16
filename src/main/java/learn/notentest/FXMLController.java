@@ -144,7 +144,7 @@ public class FXMLController implements Initializable {
             schnittSo = 1;
         }
 
-        if (!(schriftlich.size() == 0)) {
+        if (!(sonstiges.size() == 0)) {
             schnittGes = (schnittSch * schriftlichGewichtung
                     + schnittMue * mündlichGewichtung
                     + schnittSo * sonstigesGewichtung)
